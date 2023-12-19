@@ -4,7 +4,6 @@ const ship = Ship.new(3)
 test('Correct ship', () => {
   expect(ship.length).toBe(3)
   expect(ship.hits).toBe(0)
-  expect(ship.sunk).toBe(false)
 })
 
 test('Hit function', () => {

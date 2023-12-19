@@ -4,7 +4,6 @@ Ship.new = (length) => {
   const obj = {}
   obj.length = length
   obj.hits = 0
-  obj.sunk = false
 
   obj.hit = () => {
     obj.hits++
