@@ -1,4 +1,4 @@
-import { Ship } from "./ship"
+import { Ship } from "../src/ship"
 
 const ship = Ship.new(3)
 test('Correct ship', () => {
