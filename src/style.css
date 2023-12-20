@@ -1,3 +1,26 @@
 :root {
   font-size: 62.5%;
 }
+
+body {
+  height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.boards-container {
+  display: flex;
+  gap: 64px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.board {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
