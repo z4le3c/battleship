@@ -15,6 +15,7 @@ const genericBoard = () => {
 }
 
 const player1 = Player.new(genericBoard())
-const player2 = Player.new(genericBoard())
+const computer = Player.new(genericBoard())
 
-UI.renderBoards(player1.board, player2.board)
+UI.renderBoard(player1.board, "b-player")
+UI.renderBoard(computer.board, "b-computer", true)

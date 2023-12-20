@@ -17,10 +17,22 @@ body {
   gap: 64px;
   justify-content: space-evenly;
   width: 100%;
+  font-size: 2.4rem;
 }
 
 .board {
   width: 500px;
   height: 500px;
-  background-color: red;
+  background-color: rgb(131, 131, 131);
+  flex-shrink: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  justify-content: space-evenly;
+}
+
+.grid-cell {
+  background-color: rgb(223, 223, 240);
+  box-sizing: border-box;
 }
