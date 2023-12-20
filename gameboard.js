@@ -51,6 +51,7 @@ Gameboard.new = () => {
     return board[row][col]
   }
 
+  // returns true if there was a hit with a ship, false otherwise
   obj.receiveAttack = (row, col) => {
     hits[row][col] = 1
     if (board[row][col]) {
