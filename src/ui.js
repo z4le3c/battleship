@@ -16,7 +16,10 @@ UI.renderBoard = (board, divId, computer = false) => {
       }
       gridCell.addEventListener('click', () => {
         if (!board.hasHit(row, col)) {
-          board.receiveAttack(row, col)
+          let hit = board.receiveAttack(row, col)
+          if (hit) {
+            gridCell.style.backgroundColor = 'red'
+          } else gridCell.style.backgroundColor = 'rgb(202, 202, 202)'
           console.log(board.get(row, col))
         }
       })
