@@ -8,7 +8,10 @@ body {
 
 .app-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 64px;
   height: 100%;
 }
 
@@ -28,11 +31,14 @@ body {
 
   display: flex;
   flex-wrap: wrap;
-  gap: 1px;
-  justify-content: space-evenly;
 }
 
 .grid-cell {
   background-color: rgb(223, 223, 240);
   box-sizing: border-box;
+  border: 1px solid rgb(124, 124, 124);
+}
+
+.message {
+  font-size: 3.6rem;
 }
